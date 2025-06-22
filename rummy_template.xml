@@ -1,0 +1,30 @@
+<odoo>
+    <template id="rummy_games_page" name="Rummy Game Download Page" inherit_id="website.layout">
+        <xpath expr="//div[@id='wrap']" position="inside">
+            <div style="background-color:#2e005f; padding: 30px; color: white; font-family: sans-serif;">
+              <h2 style="text-align: center; color: gold;">🎮 The Most Trusted Rummy APP 🎮</h2>
+              <div style="display: flex; flex-direction: column; gap: 20px; margin-top: 30px;">
+                <div t-foreach="[
+                    ['Jaiho Arcade', 'https://www.jaihoarcade41.com?code=EPLJG56DM3J&t=1750617545'],
+                    ['Rummy 91', 'https://rummy91f.com?code=4KTUEGTN25X&t=1750615498'],
+                    ['Spin Crush', 'https://3eweiosdgdherqsafb8d.Safelyearnmillionsbysharingonepersonaqfxzqyts.com?code=7H12HMFQPMX&t=1750617635'],
+                    ['Yono Rummy', 'https://yonorummydd.com?code=VIPUBZFMSQT&t=1750617677'],
+                    ['Ind Rummy', 'https://indrummy4.com?code=SVQ63Q8FFPZ&t=1750617710'],
+                    ['Yono Arcade', 'https://uonoarcadeagents1.com?code=ZXU6SHMK5T9&t=1750617770']
+                    ]" t-as="app">
+                    <div style="background-color: #3f0073; border-radius: 10px; padding: 15px; display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px;">
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <img src="/web/static/src/img/icons/file.png" alt="App Icon" style="width: 60px; height: 60px; border-radius: 10px;">
+                            <div>
+                                <h3 style="margin: 0;" t-esc="app[0]"/>
+                                <p style="margin: 0; font-size: 14px;">10M+ | Upto ₹50<br><span style="color: lightgreen;">Min. Redeem ₹100/-</span></p>
+                            </div>
+                        </div>
+                        <a t-attf-href="{{ app[1] }}" style="background-color: gold; color: black; padding: 10px 20px; border-radius: 5px; text-decoration: none;">Download</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>
